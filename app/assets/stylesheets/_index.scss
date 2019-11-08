@@ -1,4 +1,5 @@
 .wrapper{
+  display: flex;
   .chat-side{
    color: $white;
    width: 300px;
@@ -6,7 +7,6 @@
     .side-header{
     background-color: $side_blue_dark;
     height: 100px;
-    display: flex;
     padding: 0 20px;
     line-height: 100px;
       &__box{
@@ -23,9 +23,6 @@
             margin-left: 0.3rem;
             color: $white;
           }
-          a.visited{
-            color: $white;
-          }
         }
       }
     }
@@ -35,18 +32,17 @@
       background-color: #2f3e51;
       padding: 20px 20px 0;
       overflow: scroll;
-      a{
-        color: $white;
+      .group{
+        margin-bottom: 40px;
         text-decoration: none;
-        .group{
-          margin-bottom: 40px;
-          .group__group-name{
-            margin-bottom: 5px;
-            font-size: 15px;
-          }
-          .group__latest-message{
-            font-size: 11px;
-          }
+        &__group-name{
+          margin-bottom: 5px;
+          font-size: 15px;
+          color: $white;
+        }
+        .group__latest-message{
+          font-size: 11px;
+          color: $white;
         }
       }
     }
@@ -76,18 +72,17 @@
           }
         }
       }
-      a{
+      .main-header__edit-btn{
         color: $light_blue;
         cursor: pointer;
-        .main-header__edit-btn{
-          height: 40px;
-          line-height: 40px;
-          padding: 0 20px;
-          margin-top: 28px;
-          border: solid 1px $light_blue;
-          position: absolute;
-          right: 40px;
-        }
+        text-decoration: none;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin-top: 28px;
+        border: solid 1px $light_blue;
+        position: absolute;
+        right: 40px;
       }
     }
     .messages{
@@ -121,26 +116,21 @@
       background-color: #ddd;
       .new_message{
         display: flex;
-        .input-box{
-         position: relative;
-         width: 100%;
-         display: flex;
-          &__text{ 
-            border-style: none;
-            padding: 0 40px 0 10px;
-            height: 100%;
-            width: 100%;
-          }
-          &__image{
-            font-size: 1.3rem;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            &__file{
-              display: none;
-            }
-          }
+        .form-message{
+          border-style: none;
+          padding: 0 40px 0 10px;
+          width: 100%;
+          display: flex;
+        }
+        .input-box__image{
+        font-size: 1.3rem;
+        position: relative;
+        top: 10px;
+        right: 40px;
+        cursor: pointer;
+        &__file{
+          display: none
+        }
         }
         .submit-btn{
           width: 100px;
