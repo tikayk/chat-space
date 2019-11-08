@@ -12,11 +12,11 @@
           = link_to edit_user_path(current_user) do
             = icon 'fas fa-cog', class: 'fas fa-cog' do
               %i.fa.fa-cog
-.groups
-  - current_user.groups.each do |group|
-    .group
-      = link_to group_path(group) do
-        .group__name
-          = group.name
-        .group__message
-          メッセージはまだありません。
+  .groups
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path(group), class: 'group' do
+          .group__group-name
+            = group.name
+          .group__latest-message
+            = group.show_last_message
