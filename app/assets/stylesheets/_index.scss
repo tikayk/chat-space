@@ -1,11 +1,10 @@
-
 .wrapper{
   .chat-side{
-   color: $font;
+   color: $white;
    width: 300px;
    float: left;
     .side-header{
-    background-color: $side-gb;
+    background-color: $side_blue_dark;
     height: 100px;
     display: flex;
     padding: 0 20px;
@@ -22,10 +21,10 @@
           display: flex;
           a{
             margin-left: 0.3rem;
-            color: $font;
+            color: $white;
           }
           a.visited{
-            color: $font;
+            color: $white;
           }
         }
       }
@@ -37,7 +36,7 @@
       padding: 20px 20px 0;
       overflow: scroll;
       a{
-        color: $font;
+        color: $white;
         text-decoration: none;
         .group{
           margin-bottom: 40px;
@@ -78,14 +77,14 @@
         }
       }
       a{
-        color: $btn-color;
+        color: $light_blue;
         cursor: pointer;
         .main-header__edit-btn{
           height: 40px;
           line-height: 40px;
           padding: 0 20px;
           margin-top: 28px;
-          border: solid 1px #38aef0;
+          border: solid 1px $light_blue;
           position: absolute;
           right: 40px;
         }
@@ -100,7 +99,7 @@
         display: flex;
         margin-bottom: 10px;
         &__talker{
-          color: $message-color;
+          color: $black;
           font-size: 16px;
           font-weight: bold;
         }
@@ -111,7 +110,7 @@
         }
       }
       .message__text{
-        color: $message-color;
+        color: $black;
         font-size: 14px;
         margin-bottom: 10px;
       }
@@ -147,9 +146,9 @@
           width: 100px;
           height: 50px;
           padding: 0 30px;
-          color: $font;
+          color: $white;
           cursor: pointer;
-          background-color: $btn-color;
+          background-color: $light_blue;
           margin-left: 15px;
         }
       }
