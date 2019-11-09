@@ -32,9 +32,11 @@
       background-color: #2f3e51;
       padding: 20px 20px 0;
       overflow: scroll;
+
       .group{
         margin-bottom: 40px;
         text-decoration: none;
+        
         &__group-name{
           margin-bottom: 5px;
           font-size: 15px;
@@ -49,6 +51,7 @@
   .chat-main{
     width: calc(100vw - 300px);
     float: left;
+
     .main-header{
       height: 100px;
       padding: 0 40px;
@@ -56,8 +59,10 @@
       justify-content: space-between;
       border-bottom: solid 1px #eee;
       overflow: scroll;
+
       &__left-box{
         margin-top: 35px;
+
         &__current-group{
           font-size: 20px;
           color: #333;
@@ -90,14 +95,17 @@
       padding: 46px 40px;
       background-color: #fafafa;
       overflow: scroll;
+
       .message__upper-info{
         display: flex;
         margin-bottom: 10px;
+
         &__talker{
           color: $black;
           font-size: 16px;
           font-weight: bold;
         }
+
         &__date{
           color: #999999;
           font-size: 12px;
@@ -114,8 +122,10 @@
       height: 50px;
       padding: 20px 40px;
       background-color: #ddd;
+
       .new_message{
         display: flex;
+      
         .form-message{
           border-style: none;
           padding: 0 40px 0 10px;
@@ -128,6 +138,7 @@
         top: 10px;
         right: 40px;
         cursor: pointer;
+
         &__file{
           display: none
         }
