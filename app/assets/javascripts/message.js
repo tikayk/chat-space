@@ -23,7 +23,6 @@ $(function(){
     e.preventDefault()
     var formData = new FormData(this);
     var url = $(this).attr('action')
-    console.log(formData)
     $.ajax({
       url: url, 
       type: 'POST',
