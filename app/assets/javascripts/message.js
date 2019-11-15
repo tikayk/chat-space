@@ -21,8 +21,8 @@ $(function(){
   }
   $('#new_message').on('submit',function(e){
     e.preventDefault()
-    var formData = new FormData(this);
-    var url = $(this).attr('action')
+    let formData = new FormData(this);
+    let url = $(this).attr('action')
     $.ajax({
       url: url, 
       type: 'POST',
