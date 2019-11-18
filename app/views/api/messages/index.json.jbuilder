@@ -5,3 +5,6 @@ json.array! @messages do |message|
   json.name message.user.name
   json.id message.id
 end
+
+
+#json.time   message.created_at.to_s
